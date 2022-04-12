@@ -1,0 +1,192 @@
+:root {
+    --dark:        rgb(44, 44, 44);
+    --greyish:  rgb(235, 235, 235);
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
+    font-size:          .9rem;
+    margin:                 0;
+}
+h1 {
+    text-align: inherit;
+}
+header {
+    width:        100%;
+    text-align: center;
+}
+
+.logo {
+    margin:       .5rem;
+    font-size:      3em;
+    display:      block;
+    color:      beige;
+    line-height: 1.5rem;
+}
+
+.logo span {
+    display:   block;
+    font-size: .3em;
+}
+
+main {
+    background-color: #fff;
+    margin:           0 auto;
+    width:               60%;
+    background:  var(--dark);
+}
+
+.section1_col {
+    background-color: #fff;
+    box-sizing:   border-box;
+}
+
+.troiscontenu {
+    display:                 flex;
+    flex-direction:        column;
+    justify-content: space-evenly;
+}
+.img1 img {
+    width:            100%;
+}
+.txtcenter {
+    margin:           4rem;
+    text-align:     center;
+    line-height:     .5rem;
+}
+.txtcenter p:nth-child(1) {
+    font-size:   1.5em;
+}
+.txtcenter p:nth-child(2) {
+    color:       gray;
+    font-size:    .8rem;
+}
+.txtcenter p:nth-child(2)::before {
+    content: ' ';
+    background-color: rgb(198, 198, 198);
+    display:                         block;
+    height:                           .1em;
+    width:                             33%;
+    left:                              33%;
+    top:                            -.5rem;
+    position:                     relative;
+}
+.txtlong {
+    background-color: var(--greyish);
+    padding:                  7% 10%;
+}
+
+/* SECTION 2    SECTION 2    SECTION 2    SECTION 2    SECTION 2 */
+.section2 {
+    text-align:  center;
+    color:      beige;
+    width:          80%;
+    margin:         10%;
+}
+.entete {
+    background-color:    black;
+    margin:               0 auto;
+    height:                 15vh;
+    display:                flex;
+    flex-direction:       column;
+    align-items:          center;
+    justify-content:      center;
+}
+.entete p {
+    line-height: 0;
+}
+
+.entete p:nth-child(1) {
+    font-size:   1.8em;
+    font-weight:   500;
+    display:    inline;
+}
+.entete p:nth-child(2) {
+    font-size:   .65em !important;
+    display:               inline;
+    color:      rgb(77, 77, 77);
+
+}
+.entete p:nth-child(2)::before {
+    content: ' ';
+    background-color: rgb(77, 77, 77);
+    width:                          33%;
+    display:                      block;
+    height:                        .1em;
+    left:                           33%;
+    top:                         -.5rem;
+    position:                  relative;
+}
+.quatreimg {
+    display:                 flex;    
+    flex-wrap:               wrap;
+    justify-content:       center;
+    align-items:           center;
+}
+.quatreimg div{
+    padding:                    0;
+    margin:                     0;
+    width:                    50%;
+    box-sizing:        border-box;
+    line-height:                0;
+}
+.quatreimg div img {
+    width:                   100%;
+    height:                  auto;
+
+}
+
+/* SECTION 3   SECTION 3   SECTION 3   SECTION 3    */
+.sixpart {
+    font-size:               .7rem;
+    width:                    100%;
+    display:                  grid;
+    grid-template-columns:  1fr 1fr;
+    column-gap: 0;
+    overflow:    hidden !important;
+}
+.sixpart h1 {
+    line-height: 0;
+}
+.sixpart div {
+    display:             flex;
+    flex-direction:    column;
+    justify-content:   center;
+}
+.sixpart div img {
+    height:              20vw;
+    width:               100%;
+}
+.sixpart div:nth-child(6),
+.sixpart div:nth-child(2) {
+    background-color:  #fff;
+    align-items:     baseline;
+    padding:        1rem 1rem;
+}
+.sixpart div:nth-child(3) {
+    background-color: rgb(69, 69, 69);
+    align-items:     flex-end;
+    color:            beige;
+    padding:        1rem 1rem;
+}
+
+
+/* FOOTER      FOOTER      FOOTER       */
+
+footer {
+    display:              flex;
+    justify-content:    center;
+    align-items:        center;
+    flex-direction:     column;
+    color:             beige;
+}
+
+.reseauxsocial {
+    display:                   flex;
+    justify-content:         center;
+}
+.reseauxsocial i {
+    margin:             1rem .5rem 0;
+}

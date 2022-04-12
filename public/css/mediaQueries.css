@@ -1,0 +1,111 @@
+
+@media screen and (min-width: 2560px) {
+    
+    body {
+        background-repeat: repeat-y;
+        background-size:     130%;
+        background-image: url(../images/bg.jpg);
+        font-size:          2.5em;
+        background-attachment: fixed;
+    }
+    .sixpart {
+        font-size: 1em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sixpart div img {
+        height: 13vw;
+    }
+    .sixpart div:nth-child(1) {
+        order: 1;
+    } .sixpart div:nth-child(2) {
+        order: 2;
+    } .sixpart div:nth-child(3) {
+        order: 4;
+    } .sixpart div:nth-child(4) {
+        order: 3;
+    } .sixpart div:nth-child(5) {
+        order: 5;
+    } .sixpart div:nth-child(6) {
+        order: 6;
+    }
+}
+@media screen and (min-width: 1440px) {
+
+    body {
+        font-size:             1.3em;
+        background-image: url(../images/bg.jpg);
+        background-attachment: fixed;
+        background-size:     130%;
+    }
+    main {
+        width:                   50%;
+    }
+}
+@media screen and (max-width: 769px) {
+    body{
+        font-size:              .8rem;
+    }
+    
+    main{
+        background-color: var(--dark);
+        width:                   100% !important;
+    }
+
+    .section2 {
+        width:                100%;
+        margin:        0 0 10rem 0;
+    } 
+    .sixpart {
+        width:                                      80%;
+        margin:                                    auto;
+        display:                                   grid;
+        grid-template-columns:                      1fr;
+        padding:                              2rem 2rem;
+    }
+    .sixpart p{
+        text-align: center;
+    }
+    .sixpart div img {
+        height: 50vw;
+        width: 100%;
+    }
+    .sixpart div:nth-child(1) {
+        order: 1;
+    } .sixpart div:nth-child(2) {
+        order: 2;
+    } .sixpart div:nth-child(3) {
+        order: 4;
+    } .sixpart div:nth-child(4) {
+        order: 3;
+    } .sixpart div:nth-child(5) {
+        order: 5;
+    } .sixpart div:nth-child(6) {
+        order: 6;
+    }
+}
+@media screen and (max-width: 426px) {
+    body {
+        font-size:  .6rem;
+    }
+
+    .quatreimg {
+        flex-direction: column;
+    }
+    .quatreimg div {
+        width: 100%;
+        background: #000;
+        line-height: 1rem;
+    }
+
+    .sixpart {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .sixpart div img {
+        height: 70vw;
+    }
+    .txtcenter{
+        line-height: 1rem;
+    }
+}
