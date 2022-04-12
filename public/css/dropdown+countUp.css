@@ -1,0 +1,83 @@
+/* DROPDOWN-NAV        DROPDOWN-NAV        DROPDOWN-NAV        DROPDOWN-NAV         */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover {
+    color: rgb(78, 207, 49);
+}
+.dropdown-content {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1.6rem;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    width:  200%;
+    height: 5rem;
+    border-top: .4rem solid rgb(78, 207, 49);
+    background-color: #fff;
+    text-align: left;
+    font-size: .9em;
+    box-shadow: 0 0 .6rem rgb(54, 54, 54);
+}
+.dropdown:hover  .dropdown-content {
+    visibility: visible !important;
+}
+
+.dropdown-content li {
+    display: block;
+    width: 100%;
+    padding: 0 .2rem;
+    margin: 0;
+    line-height: 2rem;
+    color: black;
+}
+.dropdown-content li:hover {
+    padding-left: 2rem;
+    color: rgb(78, 207, 49) !important;
+    
+}
+
+/* BURGER      BURGER      BURGER       */
+
+.burger:hover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:        100%;
+    height:      100vh;
+    background-color: #fff;
+    color: transparent;
+}
+
+.burger ul {
+    display: none;
+    visibility: hidden;
+    color: black;
+    line-height: 4rem;
+}
+#xBurger {
+    position: absolute;
+    width:  6rem;
+    height: 6rem;
+    top:   2rem;
+    right: 2rem;
+}
+#xBurger a {
+    width: 100%;
+    height: 100%;
+}
+#xBurger:active .burger ul{
+    visibility: hidden;
+}
+.burger:hover ul {
+    display: block;
+    visibility: visible;
+    margin: 10vh auto;
+}
+

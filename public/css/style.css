@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* GENERAL         GENERAL         GENERAL         GENERAL         GENERAL          */
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+h1 {
+    font-size: 5.5vw;
+    font-weight: 500;
+    font-stretch: ultra-expanded;
+}
+h2 {
+    font-size: 2.7em;
+    font-weight: 500;
+}
+h3 {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+/* GROUP       GROUP        GROUP       GROUP      GROUP       */
+
+.h2-top {
+    width: 100%;
+    text-align: center;
+    line-height: 4rem;
+}
+.h2-top hr {
+    width: 4rem;
+    height: .08rem;
+    background-color: rgb(25, 84, 246);
+}
+.h2-top p {
+    font-size: 100;
+    color: rgb(190, 190, 190);
+}
+
+
+/* HEADER          HEADER          HEADER          HEADER           */
+
+header {
+    background-size: 150%;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url(../img/hero.jpg) center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.img-blur {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+/* HEADERTOP      HEADERTOP      HEADERTOP      */
+.head-top {
+    padding-top: 2rem;
+}
+.logo {
+    color: black;
+}
+.agency {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: -.3rem;
+}
+
+.menu {
+    width: 60%;
+}
+.home {
+    color: rgb(78, 207, 49);
+}
+
+.burger {
+    display: none;
+}
+
+/* HEADERBOT      HEADERBOT      HEADERBOT      HEADBOT       */
+.head-bottom {
+    align-items: center;
+    padding: 10%;
+}
+
+.head-bottom p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.head-bottom button {
+    font-family: 'Montserrat';
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1rem 3.5rem;
+    border-radius: 3rem;
+    border: .2px solid black;
+}
+
+button:hover {
+    background-color: rgb(34, 34, 34) !important;
+    color: beige !important;
+}
+
+
+/* SECTION 1 - laptop      SECTION 1 - laptop      SECTION 1 - laptop       */
+
+section:nth-child(1) {
+    height: 55vh;
+    padding: 2rem 4rem 4rem 4rem;
+    overflow: hidden;
+}
+
+section:nth-child(1) img {
+    position: relative;
+    top: 4rem;
+    max-width:  50%;
+    max-height: 80%;
+}
+
+section:nth-child(1) article {
+    max-width: 40%;
+    line-height: 1.4rem;
+}
+
+section:nth-child(1) p {
+    font-weight: 100;
+}
+
+
+/* SECTION 2 - "Our Services"      SECTION 2 - "Our Services"      SECTION 2 - "Our Services" */
+
+section:nth-child(2) {
+    background-color: rgb(246, 246, 246);
+    padding: 4rem 1rem;
+}
+
+.s2-grid-contain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.s2-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding: 1rem;
+}
+
+.s2-grid-item img,
+.s2-grid-item h4 {
+    max-height: 5rem;
+}
+
+.s2-grid-item p {
+    color: rgb(128, 128, 128);
+    line-height: 1.5rem;
+    font-weight: 100;
+}
+
+
+/* SECTION 3  - dark   SECTION 3  - dark   SECTION 3  - dark    */
+
+.s3-contain {
+    background-color: rgb(12, 17, 30);
+    color: beige;
+    text-align: center;
+    align-items: center;
+    height: calc(100vh - 16vw);
+    padding: 10vw 5vw 6vw 5vw;
+    background-image: url(../);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.s3-top {
+    text-align: center;
+    line-height: 3rem;
+}
+
+.s3-top h2 {
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.s3-top p {
+    font-weight: 200;
+    font-size: .9em;
+
+}
+
+.s3-top button {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: 100;
+    margin: 1vw auto;
+    padding: .8rem 3.2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(20, 105, 195);
+    color: #fff;
+}
+
+.s3-bottom {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.s3-bottom div p:nth-child(1) {
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+.s3-bottom div p:nth-child(2) {
+    color: rgb(20, 105, 195);
+    font-weight: 400;
+}
+
+
+/* SECTION 4  -  portefFolio   SECTION 4  -  portefFolio   SECTION 4  -  portefFolio    */
+
+section:nth-child(4) {
+    width: 100%;
+}
+
+/* SECTION 4 GRID        SECTION 4 GRID        SECTION 4 GRID        SECTION 4 GRID */
+
+.s4-mid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap:    2rem;
+    column-gap: 2rem;
+}
+.s4-grid-item {
+    background-size: 200%;
+    background-attachment: scroll;
+    background-position: center;
+    height: 18rem;
+}
+.s4-grid-item:nth-child(1) {
+    background-image: url(/public/img/portfolio-1.jpg);
+}.s4-grid-item:nth-child(2) {
+    background-image: url(/public/img/portfolio-2.jpg);
+}.s4-grid-item:nth-child(3) {
+    background-image: url(/public/img/portfolio-3.jpg);
+}.s4-grid-item:nth-child(4) {
+    background-image: url(/public/img/portfolio-4.jpg);
+}.s4-grid-item:nth-child(5) {
+    background-image: url(/public/img/portfolio-5.jpg);
+}.s4-grid-item:nth-child(6) {
+    background-image: url(/public/img/portfolio-6.jpg);
+}.s4-grid-item:nth-child(7) {
+    background-image: url(/public/img/portfolio-1.jpg);
+}.s4-grid-item:nth-child(8) {
+    background-image: url(/public/img/portfolio-2.jpg);
+}
+.toast {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}.toast::before {
+    content: '';
+    width: 26vw;
+    color: transparent;
+    height: 100%;
+} .toast:hover {
+    animation-duration: .5s;
+    animation-name: toast;
+    animation-fill-mode: ease-out;
+    width: 80%;
+    background: #EEE;
+    color: black;
+}
+.toast p {
+    position: relative;
+    top: -15vw;
+}
+.toast i {
+    border-radius: 40%;
+    height: 1rem;
+    width: 1.2rem;
+    padding: .2rem;
+    position: relative;
+    right: -16vw;
+    top: -1vw;
+} .toast i:hover {
+    color: beige;
+    background: black;
+}
+
+/* SECTION 4 BOT       SECTION 4 BOT       SECTION 4 BOT       SECTION 4 BOT        */
+
+.s4-bottom {
+    align-items: center;
+    text-align: center;
+    margin: 15vh auto 20vh;
+}
+
+.contain-button-bottom {
+    border: .1px solid gray;
+    width: 40%;
+    border-radius: 5rem;
+    padding: .1rem;
+}
+.contain-button-bottom input {
+    border: none;
+    border-radius: 5rem;
+    width: 60%;
+    margin: 0 1rem;
+}
+.contain-button-bottom button {
+    background-color: rgb(57, 223, 57);
+    color: #EEE;
+    border-radius: 5rem;
+    border: none;
+    padding: .6rem 3rem;
+}
+
+
+/*FOOTER        FOOTER        FOOTER        FOOTER        FOOTER        FOOTER*/
+
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 2rem;
+}
+
+/* FOOTERTOP       FOOTERTOP       FOOTERTOP       FOOTERTOP       FOOTERTOP*/
+
+.foot-top {
+    padding: 5vh 0 15vh 0;
+    width: 85%;
+}
+.col-1 {
+    padding-right: 2rem;
+    max-width: 40%;
+}
+.col-2 li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+}
+footer p,
+footer li {
+    color: grey;
+    font-size: .8em;
+}
+
+/* FOOTERBOT       FOOTERBOT       FOOTERBOT       FOOTERBOT        */
+
+.foot-bottom {
+    width: 100%;
+    align-items: center !important;
+}
+.foot-bottom i {
+    border-radius: 5rem;
+    width:  3rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 5vh auto;
+}
+
+#twitter {
+    color: rgb(50, 158, 231);
+    border: .02rem solid rgb(50, 158, 231);
+} #twitter:hover {
+    color: white;
+    background-color: rgb(50, 158, 231);
+}
+
+#facebook {
+    color: rgb(0, 36, 83);
+    border: .02rem solid;
+} #facebook:hover {
+    color: white;
+    background-color: rgb(0, 36, 83);
+}
+
+#pinterest {
+    color: rgb(213, 57, 40);
+    border: .02rem solid rgb(213, 57, 40);
+} #pinterest:hover {
+    color: white;
+    background-color: rgb(213, 57, 40);
+}
+
+#linkedin {
+    color: rgb(24, 117, 155);
+    border: .02rem solid rgb(24, 117, 155);
+} #linkedin:hover {
+    color: white;
+    background-color: rgb(24, 117, 155);
+}
+
+.foot-bottom p {
+    font-size: .7em;
+}
+
+@keyframes toast {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+
+    to {
+        opacity: 1;
+        width: 80%;
+        background: #EEE;
+        color: black;
+    }
+}
